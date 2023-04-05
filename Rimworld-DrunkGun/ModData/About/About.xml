@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Drunk Gun</name>
+	<author>Brvnch</author>
+  <packageId>Brvnch.DrunkGun</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+	<description>v1.0 This is a test mod for learning how to create a mod in Rimworld, adds a gun that makes colonist drunk</description>
+  <modDependencies>
+    <!-- used to pop up a warning and options if prerequisite mods aren't loaded -->
+  </modDependencies>
+
+  <!--
+    Adopted from Mod Manager, these next two settings are used by both vanilla and Mod Manager
+    to alert the player of incorrect mod load order, and wire up the auto-sort button
+    It is better to put the mod dependencies and mod load order here in About.xml, and not repeat them in Manifest.xml
+    Duplicate code creates opportunity to change one but not the other, and the fewer opportunities for trouble to arise the better.
+    Pre-bug hunting ounce of prevention
+    -->
+  <loadBefore></loadBefore>
+  <loadAfter></loadAfter>
+</ModMetaData>
