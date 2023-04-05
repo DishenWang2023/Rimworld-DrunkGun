@@ -60,11 +60,19 @@
   <ItemGroup>
     <Content Include="ModData\About\About.xml" />
     <Content Include="ModData\About\Preview.png" />
-    <Content Include="ModData\Defs\PlagueGunDefs.xml" />
-    <Content Include="ModData\Languages\English\Keyed\PlagueGun_Keys.xml" />
+    <Content Include="ModData\Defs\DrunkGunDefs.xml" />
+    <Content Include="ModData\Languages\English\Keyed\DrunkGun_Keys.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>set DrunkGunPath=""
+
+if not exist %25DrunkGunPath%25 mkdir %25DrunkGunPath%25
+if not exist %25DrunkGunPath%25\Assemblies mkdir %25DrunkGunPath%25\Assemblies
+
+xcopy $(ProjectDir)ModData %25DrunkGunPath%25 /s /y</PreBuildEvent>
+  </PropertyGroup>
 </Project>
