@@ -7,12 +7,12 @@
     <defName>Brvnch_Bullet_DrunkGun</defName>
     <label>drunk gun bullet</label>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <texPath>DrunkBullet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>1</damageAmountBase>
+      <damageAmountBase>0</damageAmountBase>
       <stoppingPower>1</stoppingPower>
       <speed>55</speed>
     </projectile>
@@ -30,7 +30,7 @@
     <label>drunk gun</label>
     <description>A curious weapon notable for its horrible health effects. Shots from this weapon can inflict the drunk on targets.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Revolver</texPath>
+      <texPath>DrunkGun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>

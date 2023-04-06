@@ -62,9 +62,8 @@
     <Content Include="ModData\About\Preview.png" />
     <Content Include="ModData\Defs\DrunkGunDefs.xml" />
     <Content Include="ModData\Languages\English\Keyed\DrunkGun_Keys.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="README.md" />
+    <Content Include="ModData\Textures\DrunkGun.png" />
+    <Content Include="ModData\Textures\DrunkBullet.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
